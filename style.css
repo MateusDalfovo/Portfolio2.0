@@ -1,0 +1,638 @@
+.menu { 
+  font-family: century;
+    text-align: center;
+    margin:auto; 
+    float:center; 
+    width:80%; 
+    background-color:#ffffff; 
+    border-radius:5px; 
+    overflow:hidden;
+    border-top: 3px #000000 solid;
+    border-left: 3px #000000 solid;
+    border-right: 3px #000000 solid;
+    border-bottom: 3px #000000 solid;
+
+    box-shadow: -1px 11px 6px -10px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -1px 11px 6px -10px rgba(0,0,0,0.42);
+    -moz-box-shadow: -1px 11px 6px -10px rgba(0,0,0,0.42);
+}
+
+h1{
+  font-family: century;
+  text-align: center
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  float: left;
+  width:100%;
+  display: block;
+  overflow:hidden!important;
+  border-bottom:1px #ffffff solid;
+  align-items: center;
+}
+
+li.right { float:right; }
+
+li.right i{ 
+     
+    z-index:2;
+    position:relative; 
+    color:#ffffff;
+    transition: 0.3s;
+
+}
+
+/*Cor das palavras do menu*/
+.lineTop span { 
+
+    font-size: 18px;
+    z-index:2; 
+    position:relative; 
+    color:#000000;
+    font-weight: bold;
+    transition: 0.3s;
+ 
+}
+
+li:hover span{ 
+
+    color:#ffffff; 
+    transition: 0.5s;
+
+}
+
+
+.lineTop {
+  display: block;
+  padding: 0 30px;
+  line-height: 50px;
+  text-decoration: none;
+  z-index:2;
+
+}
+
+
+
+
+/*Menu*/
+/*Sombra do menu*/
+.menu { 
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(211, 211, 211) 7%, rgb(255, 255, 255) 50%);
+}
+
+li { width:auto; border-bottom:none; }
+li.right .textRs { display:none; }
+
+
+/*Transição quando passa o mouse por cima da palavras no menu*/
+.lineTop:after {
+    text-align: center;
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    height:0;
+    width:100%;
+    text-align: center;
+    background-color: #000000;
+    transition: 0.35s;
+
+}
+
+/*Cor que fica depois que o mouse esta em cima das palavras*/
+li:hover .lineTop:after {
+  height:100%;
+  background-color:#000000; 
+}
+
+/*Icons*/
+i{
+    float: right;
+    font-size: 30px;
+    margin-top: 10px; 
+    margin-right: 20px;
+    width: 40px;  
+    height: 30px;
+    color: #000000;
+}
+
+
+
+/*Botão Menu*/
+
+.cssbuttons-io-button {
+  background: #000000;
+  color: white;
+  font-family: century;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 2em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(0, 0, 0);
+  right: 0.3em;
+  transition: all 0.3s;
+  
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(40% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #000000;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+
+/*Botão Páginas Portfólio*/
+
+#botao {
+  font-family: century;
+  position: relative;
+}
+
+#botaoT {
+  font-family: century;
+  position: relative;
+}
+
+#materias{
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+#manun{
+  font-size: 40px;
+  font-weight: bolder;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+#volte{
+  font-size: 20px;
+  font-weight: bolder;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+button {
+  background-color: #aeaeae;
+  display: inline-block;
+  width: 125px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -10px;
+  background: #373737;
+ }
+ 
+ button::after {
+  right: -10px;
+  background: #000000;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #ffffff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #000000;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+
+ /* Imagem */
+
+ #img-cronograma img{
+  position: relative;
+  width: 580px;
+  height: 350px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  position: relative;
+  margin-block-end: 10px;
+
+border: #000000 solid 4px;
+ }
+
+ #img-cartaz img{
+  position: relative;
+  width: 540px;
+  height: 470px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-block-end: 10px;
+
+border: #000000 solid 4px;
+ }
+ 
+#AnoUm img{
+  position: relative;
+  width: 600;
+  height: 400px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-end: 10px;
+
+  border-radius: 10px;
+  border: #000000 solid 4px;
+}
+
+#AnoDois img{
+  position: relative;
+  width: 600;
+  height: 400px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-end: 10px;
+
+  border-radius: 10px;
+  border: #000000 solid 4px;
+}
+
+#AnoTres img{
+  position: relative;
+  width: 600;
+  height: 400px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-end: 10px;
+
+  border-radius: 10px;
+  border: #000000 solid 4px;
+}
+
+.primeiro{
+  background-color: #918d83;
+}
+
+.segundo{
+  background-color:  #cc8c8b;
+}
+
+.terceiro{
+  background-color: #838383;
+}
+
+.principal{
+  background-color: rgb(155, 169, 172);
+}
+
+a{
+  text-decoration: none;
+  font-family: century;
+  color:rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+
+
+.crono img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-end: 10px;
+  margin-top: 50px;
+
+  border-radius: 10px;
+  border: #000000 solid 4px;
+}
+
+.crono{
+  background-color: rgb(162, 255, 162);
+}
+
+
+/*Card Animado*/
+
+.apresentacao, .geral{
+  top: 5%;
+  margin-top: 5%;
+  margin-left: 4%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  align-items: center;
+
+  position: absolute;
+
+}
+
+.wrapper{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  top: 50%;
+}
+
+.card{
+  width: 280px;
+  height: 330px;
+  background: #000000;
+  position:relative;
+  display: flex;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  transition: 0.5s ease-in-out;
+
+  margin-left: 2%;
+  margin-right: 8%; 
+
+  padding-right: 7%;
+  padding-top: 8%;
+
+  padding-left: 6%;
+  padding-bottom: 8%;
+
+}
+
+
+
+#alinhamento{
+  text-align: justify;
+}
+
+#alinhamento2{
+  text-align: justify;
+}
+
+#alinhamento3{
+  text-align: justify;
+}
+
+.card:hover{
+  transform: translateY(20px);
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block; 
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(50, 207, 255, 0.5), rgb(255, 241, 88));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+
+}
+
+.card:hover:before{
+  opacity: 1;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card .info{
+  position: relative;
+  z-index: 3;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.card:hover .info{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card .info h1{
+  margin: 0;
+}
+
+.card .info p{
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.sep{
+  text-decoration: underline ;
+  margin-top: 60px;
+
+}
+
+.sobre{
+  font-family: century;
+  text-align: center;
+  border-radius: 8px;
+ 
+}
+
+#hab{
+  background-color: #ffffff;
+  width: 100%;
+  height: 60px;
+  font-weight: bold;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+  
+
+}
+
+.all_habilidades{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#habilidades1{
+  width: 15%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(135, 132, 132);
+  
+  margin-top: 2%;
+  border: #000000 solid 4px;
+
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+
+}
+
+#habilidades2{
+  width: 15%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(135, 132, 132);
+
+  margin-top: 2%;
+  border: #000000 solid 4px;
+
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+
+}
+
+
+
+#habilidades4{
+  width: 15%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(135, 132, 132);
+
+  margin-top: 2%;
+  border: #000000 solid 4px;
+
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+
+}
+
+#habilidades5{
+  width: 15%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(135, 132, 132);
+
+  margin-top: 2%;
+  border: #000000 solid 4px;
+
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+
+}
+
+
+#habilidades6{
+  width: 15%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(135, 132, 132);
+
+  margin-top: 2%;
+  border: #000000 solid 4px;
+
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+
+}
+
+#habilidades7{
+  width: 15%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(135, 132, 132);
+
+  margin-top: 2%;
+  border: #000000 solid 4px;
+
+  box-shadow: inset 0 0 10px 9px #9ba9ac;
+
+}
+
+#imgs{
+  width: 10px;
+  height: 10px;
+  border: #000000 solid 4px;
+
+}
+
+#text_hab{
+font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
